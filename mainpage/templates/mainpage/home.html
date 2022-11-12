@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+  {% load static %}
+  <meta charset = "utf-8">
+  <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+  <title>Главная страница</title>
+  <link rel="stylesheet" href="{% static '/bots/css/bootstrap.css' %}">
+  <link rel="stylesheet" href="{% static '/bots/css/font-awesome.min.css' %}">
+  <link rel="stylesheet" href="{% static '/bots/css/main.css' %}">
+
+</head>
+
+<body>
+
+  <div >
+    <input type="checkbox" id="btnControl"/>
+    <label class="btnn" for="btnControl"><i class="fa fa-bars vidvij" aria-hidden="true"></i></label>
+    <a href="{% url 'korzina' %}"><i class="fa fa-shopping-cart corzik" aria-hidden="true"></i></a>
+    <div class="vidvijmenu">
+      <ul> 
+        <h2 style="font-size:30px;">Мягкая мебель</h2>
+        <li><a class="" href="{% url 'blog:cresla' %}">Кресла</a></li>
+        <li><a class="" href="{% url 'blog:crovati' %}">Кровати</a></li>
+        <li><a class="" href="{% url 'blog:divani' %}">Диваны</a></li>
+        <h2 style="font-size:30px;">Обеденная зона</h2>
+        <li><a class="" href="{% url 'blog:stoli' %}">Столы</a></li>
+        <li><a class="" href="{% url 'blog:stulia' %}">Стулья</a></li>
+        <li><a class="" href="{% url 'blog:barnie_stulya' %}">Барные стулья</a></li>
+      
+         <br>
+      <hr style="width:500px;margin-left:-200px">
+      <br>
+         
+      <li><a href="{% url 'nravit' %}">Избранное  <i  class="fa fa-heart"></i></a></li>
+      <li><a href="{% url 'novinki' %}">Новинки  <i  class="fa fa-fire"></i></a></li>
+      <li><a href="{% url 'photo' %}">Фотографии  <i  class="fa fa-camera"></i></a></li>
+      <br>
+      <hr style="width:500px;margin-left:-200px">
+      <br>
+      <li><a href="https://www.instagram.com/athome_mebel">Инстаграм #1  <i class="fa fa-instagram"></i></a></li>
+      <li><a href="https://www.instagram.com/athome_table">Инстаграм #2 <i  class="fa fa-instagram"></i></a></li>
+      <li><a href="https://api.whatsapp.com/send/?phone=79165966606&text&type=phone_number&app_absent=0">WhatsApp <i  class="fa fa-whatsapp"></i></a></li>
+    </ul>
+  
+  
+    </div>
+  </div>
+
+  <header>
+    <form action="{% url 'mebels' %}" method="get" enctype="multipart/form-data">  
+  <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+
+          
+          
+
+        <a class="navbar-brand" href="">At Home <br><b>Premium quality</b></a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-center">
+        <li ><a class="block_link roronoa" href="" >Мебель</a></li>
+        <li ><a class="block_link" href="{% url 'novinki' %}" >Новинки</a></li>
+        <li ><a class="block_link" href="{% url 'photo' %}" >Фотографии</a></li>
+        </ul>
+        
+        <ul class="nav navbar-nav navbar-right">
+          <li><a class="num" href="tel:+79165966606" style="text-decoration:none; color:#aaa;">+7-916-596-66-06</a></li>
+          
+          <li> 
+          <button type="submit"><a><i  class="fa fa-search" aria-hidden="true" style="display:none ;"></i></a></button>
+          </li>
+          <li><a href="{% url 'nravit' %}" class="fa fa-heart"></a></li>
+          <li><a href="{% url 'korzina' %}" ><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+          <li><a href="https://www.instagram.com/athome_mebel"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+          <li><a href="https://www.instagram.com/athome_table"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+          <li><a href="https://api.whatsapp.com/send/?phone=79165966606&text&type=phone_number&app_absent=0"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+        </ul>
+        
+      </div>
+    </div>
+    <input name="poisk" class="text_input" type="text">
+  </header>
+  
+
+</form>
+
+<div class="hidden_block" id="1121" >
+    <ul class="nav navbar-nav navbar-center">
+    <li><a class="hidden_link1" href="#">Мягкая мебель</a></li>
+    <li><a class="hidden_link2" href="#">Обеденная зона</a></li>
+
+    <li><a class="hidden_link3" href="{% url 'blog:cresla' %}">Кресла</a></li>
+    <li><a class="hidden_link3" href="{% url 'blog:crovati' %}">Кровати</a></li>
+    <li><a class="hidden_link3" href="{% url 'blog:divani' %}">Диваны</a></li>
+    <li><a class="hidden_link4" href="{% url 'blog:stoli' %}">Столы</a></li>
+    <li><a class="hidden_link4" href="{% url 'blog:stulia' %}">Стулья</a></li>
+    <li><a class="hidden_link4" href="{% url 'blog:barnie_stulya' %}">Барные стулья</a></li>
+
+  </ul>
+</div>
+
+  <br><br>
+<div class="comp">
+    <div class="slider">
+      <div class="slides">
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+
+
+        <div class="slide first">
+            <img src="{% static 'bots/img/1.jpg' %}" alt="">
+        </div>
+        <div class="slide">
+          <img src="{% static 'bots/img/2.jpg' %}" alt="">
+        </div>
+        <div class="slide">
+          <img src="{% static 'bots/img/3.jpg' %}" alt="">
+        </div>
+        <div class="slide">
+         <img src="{% static 'bots/img/4.jpg' %}" alt="">
+        </div>
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+          <div class="auto-btn4"></div>
+
+        </div>
+        <div class="navigation-manual">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+          <label for="radio4" class="manual-btn"></label>
+
+        </div>
+      </div>
+      
+
+
+        </div>
+        <br><br>
+    <div class="recomendation">
+  <ul>
+   <li class="odin_block"> <a href="{% url 'blog:stulia' %}"> <img class="odin_block_img"  src="{% static 'bots/img/da/stul.jpg' %}" ></a><a href="{% url 'blog:stulia' %}" class="d-name">Стулья</a></li>
+
+   <li class="odin_block"> <a href="{% url 'blog:barnie_stulya' %}"> <img class="odin_block_img"  src="{% static 'bots/img/da/bar_stul.jpg' %}"></a><a href="{% url 'blog:barnie_stulya' %}" class="dd-name">Барные стулья</a></li>
+
+   <li class="odin_block"> <a href="{% url 'blog:stoli' %}"> <img class="odin_block_img"  src="{% static 'bots/img/da/stol.jpg' %}"></a><a href="{% url 'blog:stoli' %}" class="d-name">Столы</a></li>
+<br>
+    <li class="odin_block"> <a href="{% url 'blog:crovati' %}"> <img class="odin_block_img"  src="{% static 'bots/img/da/crovat.jpg' %}" ></a><a href="{% url 'blog:crovati' %}" class="d-name">Кровати</a></li>
+ 
+    <li class="odin_block"> <a href="{% url 'blog:divani' %}"> <img class="odin_block_img"  src="{% static 'bots/img/da/divani.jpg' %}"></a><a href="{% url 'blog:divani' %}" class="d-name">Диваны</a></li>
+ 
+    <li class="odin_block"> <a href="{% url 'blog:cresla' %}"> <img class="odin_block_img"  src="{% static 'bots/img/da/creslo.jpg' %}"></a><a href="{% url 'blog:cresla' %}" class="d-name">Кресла</a></li>
+  </ul>
+  </div>
+   <div> <a href="tel:+79165966606" ><i class="fa fa-phone" aria-hidden="true" ></i></a></div>
+</div>
+<div class="mobile">
+  <p>
+  Высококачественная дизайнерская мебель 
+  </p>
+  </div>
+<div class="mobile">
+ 
+  <div class="slider">
+    <div class="slides">
+      <input type="radio" name="radio-btn" id="radio11">
+      <input type="radio" name="radio-btn" id="radio22">
+      <input type="radio" name="radio-btn" id="radio33">
+      <input type="radio" name="radio-btn" id="radio44">
+
+
+      <div class="slide second">
+          <img src="{% static 'bots/img/5.jpg' %}" alt="">
+      </div>
+      <div class="slide">
+        <img src="{% static 'bots/img/6.jpg' %}" alt="">
+      </div>
+      <div class="slide">
+        <img src="{% static 'bots/img/7.jpg' %}" alt="">
+      </div>
+      <div class="slide">
+       <img src="{% static 'bots/img/8.jpg' %}" alt="">
+      </div>
+      <div class="navigation-auto">
+        <div class="auto-btn11"></div>
+        <div class="auto-btn22"></div>
+        <div class="auto-btn33"></div>
+        <div class="auto-btn44"></div>
+
+      </div>
+      <div class="navigation-manual">
+        <label for="radio11" class="manual-btn"></label>
+        <label for="radio22" class="manual-btn"></label>
+        <label for="radio33" class="manual-btn"></label>
+        <label for="radio44" class="manual-btn"></label>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<div class="mobile">
+  <p>
+    Покупайте на сайте:
+  </p>
+</div>
+<div class="mobile d">
+  <div class="recomendation">
+    <ul>
+     <li class="mob_rec"> <a class="animating_nad" href="{% url 'blog:stulia' %}">Стулья</a><br><a href="{% url 'blog:stulia' %}"> <img class="img_mob_rec"  src="{% static 'bots/img/daa/stul.jpg' %}" ></a><br></li>
+  
+     <li class="mob_rec1"><a class="animating_nadd" href="{% url 'blog:barnie_stulya' %}">Бар.стулья</a> <br><a href="{% url 'blog:barnie_stulya' %}"> <img class="img_mob_rec"  src="{% static 'bots/img/daa/bar_stul.jpg' %}"></a><br></li>
+  
+     <li class="mob_rec"><a class="animating_nad" href="{% url 'blog:stoli' %}">Столы</a><br> <a href="{% url 'blog:stoli' %}"> <img class="img_mob_rec"  src="{% static 'bots/img/daa/stol.jpg' %}"></a><br></li>
+  
+      <li class="mob_rec1"><a class="animating_nad" href="{% url 'blog:crovati' %}">Кровати</a><br> <a href="{% url 'blog:crovati' %}"> <img class="img_mob_rec"  src="{% static 'bots/img/daa/crovat.jpg' %}" ></a><br></li>
+  
+      <li class="mob_rec"> <a class="animating_nad" href="{% url 'blog:divani' %}">Диваны</a><br><a href="{% url 'blog:divani' %}"> <img class="img_mob_rec"  src="{% static 'bots/img/daa/divani.jpg' %}"></a><br></li>
+   
+      <li class="mob_rec1"><a class="animating_nad" href="{% url 'blog:cresla' %}">Кресла</a> <br><a href="{% url 'blog:cresla' %}"> <img class="img_mob_rec"  src="{% static 'bots/img/daa/creslo.jpg' %}"></a><br></li>
+    </ul>
+    </div>
+</div>
+<div class="mobile">
+  <a href="{% url 'novinki' %}"><p>нажмите чтобы посмотреть горячие новинки на сайте</p></a>
+  <br>
+
+</div>
+<br>
+<div class="mobile" style="border:1px dashed rgb(0, 0, 0);">
+  <p>Есть вопросы? <br>
+  Обратитесь в поддержку<br>
+  <a  href="tel:+79165966606" style="font-size: 70px;"><i class="fa fa-mobile numchik"  aria-hidden="true"></i></a>
+  
+</p>
+<br>
+
+</div>
+
+    <script type="text/javascript">
+      let logos = document.querySelector('.hidden_block');
+      var counter = 1;
+      var a=0;
+      document.querySelector('.fa-search').onmouseenter=()=>{
+       
+        setInterval(function(){
+          if (a<150){
+          document.querySelector('.text_input').style="display:flex;width:" +a+"px;";
+          a+=0.5;
+        }
+        
+        },1)
+        a=0;
+        }
+        
+    
+      logos.style='visibility:hidden'
+      document.querySelectorAll('.hidden_link3')[0].style='display:none';
+      document.querySelectorAll('.hidden_link4')[0].style='display:none';
+      document.querySelectorAll('.hidden_link3')[1].style='display:none';
+      document.querySelectorAll('.hidden_link4')[1].style='display:none';
+      document.querySelectorAll('.hidden_link3')[2].style='display:none';
+      document.querySelectorAll('.hidden_link4')[2].style='display:none';
+
+      document.querySelector('.hidden_link1').onmouseenter=()=>{
+        document.querySelectorAll('.hidden_link4')[0].style='display:none';
+        document.querySelectorAll('.hidden_link4')[1].style='display:none';
+        document.querySelectorAll('.hidden_link4')[2].style='display:none';
+        document.querySelectorAll('.hidden_link3')[0].style='display:flex';
+        document.querySelectorAll('.hidden_link3')[1].style='display:flex';
+        document.querySelectorAll('.hidden_link3')[2].style='display:flex';
+        document.querySelector('.text_input').style="display:none"
+      }
+      document.querySelector('.hidden_link2').onmouseenter=()=>{
+        document.querySelectorAll('.hidden_link3')[0].style='display:none';
+        document.querySelectorAll('.hidden_link3')[1].style='display:none';
+        document.querySelectorAll('.hidden_link3')[2].style='display:none';
+
+        document.querySelectorAll('.hidden_link4')[0].style='display:flex';
+        document.querySelectorAll('.hidden_link4')[1].style='display:flex';
+        document.querySelectorAll('.hidden_link4')[2].style='display:flex';
+        document.querySelector('.text_input').style="display:none"
+      }
+        document.querySelector('.roronoa').onmouseenter=()=>{
+          setTimeout(function(){logos.style='visibility:visible';},500)
+        
+      }
+      document.querySelector('.slider').onmouseenter=()=>{
+        logos.style='visibility:hidden';
+      document.querySelectorAll('.hidden_link3')[0].style='display:none';
+      document.querySelectorAll('.hidden_link4')[0].style='display:none';
+      document.querySelectorAll('.hidden_link3')[1].style='display:none';
+      document.querySelectorAll('.hidden_link4')[1].style='display:none';
+      document.querySelectorAll('.hidden_link3')[2].style='display:none';
+      document.querySelectorAll('.hidden_link4')[2].style='display:none';
+      document.querySelector('.text_input').style="display:none";
+      }
+      document.querySelector('.navbar-brand').onmouseenter=()=>{
+        logos.style='visibility:hidden';
+      document.querySelectorAll('.hidden_link3')[0].style='display:none';
+      document.querySelectorAll('.hidden_link4')[0].style='display:none';
+      document.querySelectorAll('.hidden_link3')[1].style='display:none';
+      document.querySelectorAll('.hidden_link4')[1].style='display:none';
+      document.querySelectorAll('.hidden_link3')[2].style='display:none';
+      document.querySelectorAll('.hidden_link4')[2].style='display:none';
+      document.querySelector('.text_input').style="display:none";
+      }
+      
+      
+      setInterval(function(){
+      document.getElementById('radio'+counter).checked = true;
+      counter++;
+      
+      if(counter>4){
+        counter=1;
+        
+      }
+    },8000);
+      
+    </script>
+
+<script type="text/javaascript" src="{% static 'bots/js/script.js' %}"></script>
+<script type="text/javaascript" src="{% static 'bots/js/panpan.js' %}"></script>
+</body>
+
+</html>

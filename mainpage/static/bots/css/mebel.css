@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Playfair+Display:ital@1&display=swap');
+/*MEEEEEEEEEEEEBEEEEEEEEEEEELIMAAAAAAAAAAAAAAAAAAAGE*/
+.slider{
+    background-color: #ffffff;
+    width: 700px;
+    height: 540px;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    left:-250px;
+}
+.slide img{
+    width: 700px;
+    position: relative;
+    border-radius: 15px;
+}
+.navigation-manual{
+    position: absolute;
+    width: 700px;
+    margin-top: 450px;
+    display: flex;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    transition: 1s;
+}
+.manual-btn{
+    border: 2px solid #ffffff;
+    padding: 2px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+.label_photo{
+    width: 100px;
+    transition: 0.5s;
+}
+.manual-btn:hover{
+    background: rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.label_photo:hover{
+    width: 120px;
+    border-radius: 10px;
+}
+
+#radio1:hover ~ .navigation-manual{
+    margin-left: 10px;
+}
+
+#radio5:hover ~ .navigation-manual{
+    margin-left: -10px;   
+}
+.line-1 {
+    height: 1px;
+    background: rgb(0, 0, 0);
+    z-index: 1;
+  }
+
+.strelkosi{
+    position: absolute;
+    z-index: 1;
+    color:#d6d6d697;
+    margin-left: 610px;
+    font-size: 100px;
+    margin-top: 150px;
+    transition: 0.5s;
+}
+.strelkosi:hover{
+    color: #2e2e2e89;
+}
+.strelkosi1{
+    position: absolute;
+    z-index: 1;
+    color:#d6d6d697;
+    margin-left: 10px;
+    font-size: 100px;
+    margin-top: 150px;
+    transition: 0.5s; 
+}
+.strelkosi1:hover{
+    color: #2e2e2e89;
+}
+/*MEEEEEEEEEEEEBEEEEEEEEEEEELIMAAAAAAAAAAAAAAAAAAAGE*/
+
+
+h3{
+    color: rgb(0, 0, 0);
+    margin-left:360px;
+}
+
+.info_mebel{
+    width: 700px;
+    height: 540px;
+    position: absolute;
+    margin-left:1200px;
+    margin-top: -500px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+.opisaniyes{
+    width: 1000px;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-weight: bold;
+    margin-left:350px;
+}
+.opisaniye{
+    width: 1000px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    margin-left:350px;
+}
+.pr_in_fin{
+    font-size: 30px;
+    font-weight: bold;
+}
+.korz {
+    margin-left: 150px;
+    margin-top: -35px;
+}
+
+
+
+
+
+@media screen and (max-width:1680px){
+   .slider{
+    width:600px;
+    height: 480px;
+    margin-left: 600px;
+   }
+    .slide img{
+    width: 600px;
+    }
+    .navigation-manual{
+        width: 600px;
+        margin-top: 390px;
+        float: left;
+        padding: 1px;
+     }
+     #radio1:hover ~ .navigation-manual{
+        margin-left: 30px;
+    }
+    
+    #radio5:hover ~ .navigation-manual{
+        margin-left: -30px;
+        
+    }
+    .label_photo{
+        width: 80px;
+        transition: 0.5s;
+    }
+    .strelkosi{
+        position: absolute;
+        z-index: 1;
+        color:#d6d6d697;
+        margin-left: 530px;
+        font-size: 80px;
+        margin-top: 150px;
+        transition: 0.5s;
+    }
+    .strelkosi1{
+        position: absolute;
+        z-index: 1;
+        color:#d6d6d697;
+        margin-left: 10px;
+        font-size: 80px;
+        margin-top: 150px;
+        transition: 0.5s; 
+    }
+    .info_mebel{
+        margin-left:1100px;
+        margin-top: -450px;
+    }
+    .info_mebel{
+        width:480px;
+    }
+}
+@media screen and (max-width:1366px){
+
+    .slider{
+        width:500px;
+        height: 390px;
+        margin-left: 400px;
+       }
+       .info_mebel{
+        width:500px;
+    }
+        .slide img{
+        width: 500px;
+        }
+        .navigation-manual{
+
+            width: 500px;
+            margin-top: 320px;
+            float: left;
+            padding: 1px;
+         }
+         #radio1:hover ~ .navigation-manual{
+            margin-left: 30px;
+        }
+        
+        #radio5:hover ~ .navigation-manual{
+            margin-left: -30px;
+            
+        }
+        .label_photo{
+            width: 70px;
+            transition: 0.5s;
+        }
+        .strelkosi{
+            position: absolute;
+            z-index: 1;
+            color:#d6d6d697;
+            margin-left: 440px;
+            font-size: 70px;
+            margin-top: 120px;
+            transition: 0.5s;
+        }
+        .strelkosi1{
+            position: absolute;
+            z-index: 1;
+            color:#d6d6d697;
+            margin-left: 0px;
+            font-size: 70px;
+            margin-top: 120px;
+            transition: 0.5s; 
+        }
+        .info_mebel{
+            margin-left:1100px;
+            margin-top: -450px;
+        }
+        .label_photo:hover{
+            width: 100px;
+            border-radius: 10px;
+        }
+
+
+        h3{
+            margin-left:160px;
+        }
+        .info_mebel{
+            margin-left:800px;
+            margin-top: -380px;
+            font-size: 20px;
+            
+        }
+        .info_mebel p{
+            line-height: 15px;
+        }
+
+        .opisaniyes{
+            width: 1000px;
+            color: rgb(189, 189, 189);
+            font-size: 30px;
+            font-weight: bold;
+            margin-left:150px;
+        }
+        .opisaniye{
+            width: 1000px;
+            color: rgb(189, 189, 189);
+            font-size: 20px;
+            margin-left:150px;
+        }
+        .pr_in_fin{
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .korz {
+            margin-left: 150px;
+            margin-top: -25px;
+        }
+        
+
+
+}
+@media screen and (max-width:1280px){
+    .info_mebel{
+        width:460px;
+    }
+}
+@media screen and (max-width:1176px){
+    .info_mebel{
+        width:350px;
+        
+    }
+}
+@media screen and (max-width:1152px){
+    .info_mebel{
+        width:330px;
+        
+    }
+    .opisaniye{
+        width: 800px;
+    }
+}
+@media screen and (max-width:500px){
+    .slider{
+        width: 350px;
+        height: 280px;
+        margin-left: 0px;
+        left:10px;
+       }
+       .slide img{
+        width: 350px;
+        }
+        .navigation-manual{
+
+            width: 350px;
+            margin-top: 225px;
+            float: left;
+            padding: 1px;
+            
+         }
+         .manual-btn:not(:last-child) {
+            margin-right: 20px;
+        }
+        .label_photo{
+            width: 50px;
+            transition: 0.5s;
+        }
+        .label_photo:hover{
+            width: 65px;
+            border-radius: 10px;
+        }
+        .strelkosi{
+            position: absolute;
+            z-index: 1;
+            color:#d6d6d697;
+            margin-left: 350px;
+            font-size: 70px;
+            margin-top: 120px;
+            transition: 0.5s;
+        }
+        .strelkosi1{
+            position: absolute;
+             z-index: 1;
+             color: #d6d6d697;
+             margin-left: 300px;
+             font-size: 50px;
+             margin-top: 100px;
+             transition: 0.5s;
+        }
+        .manual-btn {
+            display:block;
+            border: 2px solid #ffffff;
+            padding: 0px;
+            width:80px;
+            border-radius: 10px;
+            cursor:alias;
+            transition: 0.5s;
+        
+        }
+
+
+    .info_mebel{
+            margin-top: -450px;
+
+
+    }
+    h3{
+            margin-left:10px;
+            font-size: 25px;
+            margin-top:50px;
+        }
+        .info_mebel {
+            margin-left: 10px;
+            margin-top: 50px;
+            font-size: 20px;
+        }
+        .info_mebel p{
+            line-height: 12px;
+        }
+
+        .opisaniyes{
+            width: 200px;
+            color: rgb(0, 0, 0);
+            font-size: 30px;
+            font-weight: bold;
+            margin-left:30px;
+            margin-top: 370px;
+        }
+        .opisaniye{
+            width: 350px;
+            color: rgb(58, 58, 58);
+            font-size: 20px;
+            margin-left:20px;
+ 
+        }
+        .pr_in_fin{
+            z-index: 10;
+            font-size: 30px;
+            font-weight: bold;
+            margin-top: -80px;
+            color: rgb(255, 255, 255);
+        }
+        .korz {
+            z-index: 10;
+            font-size: 20px;
+            margin-left: 200px;
+
+        }
+   
+
+
+}

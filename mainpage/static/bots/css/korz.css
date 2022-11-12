@@ -1,0 +1,115 @@
+.zs{
+    width: 1500px;
+}
+.korz{
+    margin-top:-50px;
+ 
+}
+.oplata_blanc{
+    height: 2000px;
+    margin-top: -500px;
+    margin-left: 80%;
+    width: 100%;
+    max-width: 500px;
+    order: 2;
+    background-color: rgb(255, 255, 255);
+    position:fixed;
+}
+.oplata_blanc a{
+    position:absolute;
+    margin-left:50px;
+    margin-top: 600px;
+}
+.blancforpok{
+    border-radius: 25px;
+    width:150px
+
+}
+.blancforpoks{
+    border-radius: 25px;
+    width:300px
+
+}
+.res{
+    font-size: 30px;
+    width: 300px;
+    transition:1s;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .zs {
+        width: 800px;
+        margin-left: 50px;
+    }
+}
+
+
+
+
+@media screen and (max-width: 1680px) {
+    .oplata_blanc {
+        height: 2000px;
+        margin-top: -500px;
+        margin-left: 70%;
+        width: 100%;
+        max-width: 1200px;
+
+    }
+ 
+}
+@media screen and (max-width: 1370px) {
+    .oplata_blanc {
+        height: 2000px;
+        margin-top: -600px;
+        margin-left: 70%;
+        width: 100%;
+
+    }
+    .mebel_blockk {
+        display: inline-block;
+        margin-left: 0;
+        height: 380px;
+    }
+    .zs{
+        width: 1200px;
+    }
+
+}
+
+@media screen and (max-width: 1280px) {
+
+.zs {
+    width: 1200px;
+    margin-left: -50px;
+}
+}
+@media screen and (max-width:500px){
+    .zs {
+        width: 380px;
+        margin-left: -50px;
+    }
+    .blancforpok{
+        border: 2px dashed black;
+    }
+    .blancforpoks{
+        border: 2px dashed black;
+    }
+    .oplata_blanc{
+        height: 2000px;
+        margin-top: -500px;
+        left: 100%;
+        max-width: 500px;
+        transition:1s;
+    }
+    .mebel_blockk{
+        width:200px;
+    }
+    .oplata_blanc a{
+        position:absolute;
+        margin-left:10px;
+        margin-top: 600px;
+    }
+    
+    
+    }

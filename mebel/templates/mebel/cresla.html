@@ -1,0 +1,267 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  {% load static %}
+  <meta charset = "utf-8">
+  <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+  <title>Главная страница</title>
+ 
+  <link rel="stylesheet" href="{% static '/bots/css/bootstrap.css' %}">
+  <link rel="stylesheet" href="{% static '/bots/css/font-awesome.min.css' %}">
+  <link rel="stylesheet" href="{% static '/bots/css/main.css' %}">
+  <link rel="stylesheet" href="{% static '/bots/css/mebel.css' %]">
+</head>
+        
+<body>
+  <input type="checkbox" style="position:fixed" id="filter_btnControl" class="filter_btnControl"/>
+  <label class="btnn" onclick="iii()" style="position:fixed" for="filter_btnControl"><i class="fa fa-arrow-left filter_vidvij" aria-hidden="true"></i></label>
+
+  <div >
+    <input type="checkbox" id="btnControl"/>
+    <label class="btnn" for="btnControl"><i class="fa fa-bars vidvij" aria-hidden="true"></i></label>
+    <a href="{% url 'korzina' %}"><i class="fa fa-shopping-cart corzik" aria-hidden="true"></i></a>
+    <div class="vidvijmenu">
+      <ul> 
+        <h2 style="font-size:30px;">Мягкая мебель</h2>
+        <li><a class="" href="{% url 'blog:cresla' %}">Кресла</a></li>
+        <li><a class="" href="{% url 'blog:crovati' %}">Кровати</a></li>
+        <li><a class="" href="{% url 'blog:divani' %}">Диваны</a></li>
+        <h2 style="font-size:30px;">Обеденная зона</h2>
+        <li><a class="" href="{% url 'blog:stoli' %}">Столы</a></li>
+        <li><a class="" href="{% url 'blog:stulia' %}">Стулья</a></li>
+        <li><a class="" href="{% url 'blog:barnie_stulya' %}">Барные стулья</a></li>
+      
+         <br>
+      <hr style="width:500px;margin-left:-200px">
+      <br>
+         
+      <li><a href="{% url 'nravit' %}">Избранное  <i  class="fa fa-heart"></i></a></li>
+      <li><a href="{% url 'novinki' %}">Новинки  <i  class="fa fa-fire"></i></a></li>
+      <li><a href="{% url 'photo' %}">Фотографии  <i  class="fa fa-camera"></i></a></li>
+      <br>
+      <hr style="width:500px;margin-left:-200px">
+      <br>
+      <li><a href="https://www.instagram.com/athome_mebel">Инстаграм #1  <i class="fa fa-instagram"></i></a></li>
+      <li><a href="https://www.instagram.com/athome_table">Инстаграм #2 <i  class="fa fa-instagram"></i></a></li>
+      <li><a href="https://api.whatsapp.com/send/?phone=79165966606&text&type=phone_number&app_absent=0">WhatsApp <i  class="fa fa-whatsapp"></i></a></li>
+    </ul>
+  
+  
+    </div>
+  </div>
+  <form action="" method="get" enctype="multipart/form-data">  
+  <header>
+  <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        
+          
+          
+
+        <a class="navbar-brand" href="{% url 'home' %}">At Home <br><b>Premium quality</b></a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-center">
+        <li ><a class="block_link roronoa" href="" >Мебель</a></li>
+        <li ><a class="block_link" href="{% url 'novinki' %}" >Новинки</a></li>
+        <li ><a class="block_link" href="{% url 'photo' %}" >Фотографии</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a class="num" href="tel:+79165966606" style="text-decoration:none; color:#aaa;">+7-916-596-66-06</a></li>
+          
+          <li> 
+            <form action="" method="get" enctype="multipart/form-data">   
+              <button type="submit"><aa><i  class="fa fa-search" aria-hidden="true"></i></a></button>
+            
+          </li>
+          <li><a href="{% url 'nravit' %}" class="fa fa-heart"></a></li>
+          <li><a href="{% url 'korzina' %}" ><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+          <li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+          <li><a href=""><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+        </ul>
+        
+      </div>
+    </div>
+    <input name="poisk" class="text_input" type="text"></form>
+  </header>
+
+  <form action="" method="get" enctype="multipart/form-data">  
+
+<div class="hidden_block" id="1121" >
+  <ul class="nav navbar-nav navbar-center">
+  <li><a class="hidden_link1" href="#">Мягкая мебель</a></li>
+  <li><a class="hidden_link2" href="#">Обеденная зона</a></li>
+
+
+  <li><a class="hidden_link3" href="{% url 'blog:cresla' %}">Кресла</a></li>
+  <li><a class="hidden_link3" href="{% url 'blog:crovati' %}">Кровати</a></li>
+  <li><a class="hidden_link3" href="{% url 'blog:divani' %}">Диваны</a></li>
+  
+  <li><a class="hidden_link4" href="{% url 'blog:stoli' %}">Столы</a></li>
+  <li><a class="hidden_link4" href="{% url 'blog:stulia' %}">Стулья</a></li>
+  <li><a class="hidden_link4" href="{% url 'blog:barnie_stulya' %}">Барные стулья</a></li>
+
+
+</ul>
+</div>
+
+
+<div class="filter_block">
+
+
+    <br>
+      <div class="price_input">
+        <h3 class="price_to_centre">Цена</h3>
+        <input type="number" class="input-min" value="0" name="tsena_min"> Р
+        <input type="number" class="input-max" value="500000" name="tsena_max"> Р
+        <div class="slider_price">
+           <div class="progress"></div>
+        </div>
+        <div class="range-input">
+          <input type="range" class="range-min" min="0" max="500000" value="0" step="1000">
+          <input type="range" class="range-max" min="0" max="500000" value="1000000" step="1000">
+        </div>
+      </div>
+      <br><br>
+      <ul>
+        
+      <li>  <input type="checkbox" name="Raskladnie" id="4"> <label class="label" >Раскладные</label></li>
+    <br>
+      <li>  <input type="checkbox" name="NeRaskladnie" id="5"> <label class="label" >Не раскладные</label></li>
+     <br>
+      <li>  <input type="checkbox" name="Recliner" id="6"> <label class="label" >Реклайнеры</label></li>
+      <br>
+      <li>  <input type="checkbox" name="StilCounter" id="7"> <label class="label" >Стиль Contour</label></li>
+      <br>
+      <li>  <input type="checkbox" name="StilHusk" id="8"> <label class="label" >Стиль Husk</label></li>
+      <br>
+      <li>  <input type="checkbox" name="Vtkani" id="9"> <label class="label" >В ткани</label></li>
+      <br>
+      <li>  <input type="checkbox" name="ObivkaPechwork" id="10"> <label class="label" >Обивка "Пэчворк"</label></li>
+      <br>
+      <li>  <input type="checkbox" name="PovorotnieCresla" id="11"> <label class="label" >Поворотные кресла</label></li>
+      <br>
+      <li>  <input type="checkbox" name="CreslaCrovati" id="12"> <label class="label" >Кресла-кровати</label></li>
+      <br>
+      <li><button type="submit"><a class="searchAAA">search</a></button></form></li>
+      <form action="" method="get" enctype="multipart/form-data">
+        <li> <button type="submit"><a class="searchAAAA">показать все</a></button></li>
+    </form>
+    </ul>
+  </div>
+
+<br><br>
+<div>
+  <form action="" method="get" enctype="multipart/form-data">   
+    <button type="submit" class="poiskmob"><a><i  class="fa fa-search " aria-hidden="true"></i></a></button>
+      <input name="poisk" class="text_inputik" type="text"></form>
+
+<br>
+</div>
+<ul class="zs">
+  {% for i in mebeli %}
+
+ 
+ 
+    <li class="mebel_blockk">
+      <a href="{% url 'blog:detail_cres' i.id %}" class="{{ i.title }}"><img class="mebel_img"  src="{{ i.image.url }}" height="250" width="400"></a>
+      <a class="mebel_text" href="{% url 'blog:detail_cres' i.id %}">{{ i.title| safe | truncatechars:45 }}</a>
+    <a>{{ i.price }} ₽</a>
+    <a href="" id="{{ i.title }}" onclick=" myLoveFunction('{{ i.title }}','{{ i.image }}','{{ i.price }}', document.getElementsByClassName('{{ i.title }}')[0].href)" class="fa fa-heart"></a>
+    <a href="" id="{{ i.title }}" onclick=" myFunction('{{ i.title }}','{{ i.image }}','{{ i.price }}', document.getElementsByClassName('{{ i.title }}')[0].href)" class="korz"> купить</a>
+  </li>
+
+  {% endfor %}
+</ul>
+
+<script type="text/javascript" src="{% static 'bots/js/script.js' %}"></script>
+  <script type="text/javascript">
+    let logos = document.querySelector('.hidden_block');
+    var counter = 1;
+    var a=0;
+
+    document.querySelector('.fa-search').onmouseenter=()=>{
+      logos.style="display:none"
+      document.querySelectorAll('.hidden_link4')[0].style='display:none';
+      document.querySelectorAll('.hidden_link4')[1].style='display:none';
+      document.querySelectorAll('.hidden_link4')[2].style='display:none';
+      setInterval(function(){
+        if (a<150){
+        document.querySelector('.text_input').style="display:flex;width:" +a+"px;";
+        a+=0.5;
+      }
+      
+      },1)
+      a=0;
+      }
+      
+  
+    logos.style='visibility:hidden';
+    document.querySelectorAll('.hidden_link3')[0].style='display:none';
+    document.querySelectorAll('.hidden_link4')[0].style='display:none';
+    document.querySelectorAll('.hidden_link3')[1].style='display:none';
+    document.querySelectorAll('.hidden_link4')[1].style='display:none';
+    document.querySelectorAll('.hidden_link3')[2].style='display:none';
+    document.querySelectorAll('.hidden_link4')[2].style='display:none';
+
+    document.querySelector('.hidden_link1').onmouseenter=()=>{
+      document.querySelectorAll('.hidden_link4')[0].style='display:none';
+      document.querySelectorAll('.hidden_link4')[1].style='display:none';
+      document.querySelectorAll('.hidden_link4')[2].style='display:none';
+      document.querySelectorAll('.hidden_link3')[0].style='display:flex';
+      document.querySelectorAll('.hidden_link3')[1].style='display:flex';
+      document.querySelectorAll('.hidden_link3')[2].style='display:flex';
+      document.querySelector('.text_input').style="display:none";
+    }
+    document.querySelector('.hidden_link2').onmouseenter=()=>{
+      document.querySelectorAll('.hidden_link3')[0].style='display:none';
+      document.querySelectorAll('.hidden_link3')[1].style='display:none';
+      document.querySelectorAll('.hidden_link3')[2].style='display:none';
+
+      document.querySelectorAll('.hidden_link4')[0].style='display:flex';
+      document.querySelectorAll('.hidden_link4')[1].style='display:flex';
+      document.querySelectorAll('.hidden_link4')[2].style='display:flex';
+      document.querySelector('.text_input').style="display:none"
+    }
+      document.querySelector('.roronoa').onmouseenter=()=>{
+        setTimeout(function(){logos.style='visibility:visible';},500)
+    }
+
+    document.querySelector('.navbar-brand').onmouseenter=()=>{
+      logos.style='visibility:hidden';
+      document.querySelectorAll('.hidden_link3')[0].style='display:none';
+    document.querySelectorAll('.hidden_link4')[0].style='display:none';
+    document.querySelectorAll('.hidden_link3')[1].style='display:none';
+    document.querySelectorAll('.hidden_link4')[1].style='display:none';
+    document.querySelectorAll('.hidden_link3')[2].style='display:none';
+    document.querySelectorAll('.hidden_link4')[2].style='display:none';
+    document.querySelector('.text_input').style="display:none"
+    }
+    document.querySelector('.zs').onmouseenter=()=>{
+      logos.style='visibility:hidden';
+      document.querySelectorAll('.hidden_link3')[0].style='display:none';
+    document.querySelectorAll('.hidden_link4')[0].style='display:none';
+    document.querySelectorAll('.hidden_link3')[1].style='display:none';
+    document.querySelectorAll('.hidden_link4')[1].style='display:none';
+    document.querySelectorAll('.hidden_link3')[2].style='display:none';
+    document.querySelectorAll('.hidden_link4')[2].style='display:none';
+    document.querySelector('.text_input').style="display:none"
+    }
+    document.querySelector('.slider').onmouseenter=()=>{
+      logos.style='visibility:hidden';
+    document.querySelectorAll('.hidden_link3')[0].style='display:none';
+    document.querySelectorAll('.hidden_link4')[0].style='display:none';
+    document.querySelectorAll('.hidden_link3')[1].style='display:none';
+    document.querySelectorAll('.hidden_link4')[1].style='display:none';
+    document.querySelectorAll('.hidden_link3')[2].style='display:none';
+    document.querySelectorAll('.hidden_link4')[2].style='display:none';
+    document.querySelector('.text_input').style="display:none"
+    }
+    
+  </script>
+    <script type="text/javascript"src="{% static 'bots/js/tocorz.js' %}">
+    </script>
+</body>
+</html>
+
